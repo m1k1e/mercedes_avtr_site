@@ -33,14 +33,28 @@ h6 {
   font-size: inherit;
 }
 
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  line-height: 120%;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "Corporate-A";
+  src: url("../fonts/Corporate-A-Bold.woff2") format("woff2");
+  src: url("../fonts/Corporate-A-Bold.woff") format("woff");
+  line-height: 120%;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 html,
 body {
   height: 100%;
-  line-height: 120%;
-  font-size: 16px;
   color: #fff;
   font-family: Roboto Condensed;
-  font-weight: normal;
   background-color: #070a1b;
 }
 
@@ -83,20 +97,123 @@ body {
   overflow: hidden;
 }
 
-@font-face {
-   font-family: 'Roboto Condensed';
-   src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2');
-        url('../fonts/RobotoCondensed-Regular.woff') format('woff');
-   line-height: 120%;
-   font-size: 16px;
+/*--------------Header styles---------------------------------*/
+.header {
+  position: relative;
 }
 
-@font-face {
-   font-family: 'Corporate-A';
-   src: url('../fonts/Corporate-A-Bold.woff2') format('woff2');
-        url('../fonts/Corporate-A-Bold.woff') format('woff');
-   line-height: 120%;
-   font-size: 18px;
-   font-weight: 700;
+.header__container {
 }
 
+.header__logo {
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+}
+
+.header__top {
+  padding: 30px 0px;
+  height: 100px;
+}
+
+.header__menu {
+}
+
+.menu-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-header__burger {
+}
+
+.menu-header__link {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  transition: bacground 0.3s;
+  width: 40px;
+}
+
+.menu-header__link:hover {
+  background-color: #c1a1d2;
+}
+
+.menu-header__logo {
+}
+.menu-header__social {
+}
+.social-link__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.social-link__item {
+}
+
+.social-link__link {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  transition: bacground 0.3s;
+  width: 40px;
+}
+
+.social-link__link:hover {
+  background-color: #c1a1d2;
+}
+
+.social-link__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.promo {
+  background-image: url("../img/bg_header_bottom.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+  padding: 50px 15px;
+}
+.promo-title {
+  font-family: "Corporate-A";
+  font-size: 72px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.promo-text {
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 600px) {
+  .header__top {
+    height: 200px;
+  }
+
+  .menu-header {
+    justify-content: center;
+  }
+
+  .menu-header__logo {
+    margin: 15px;
+  }
+
+  .promo-title {
+    font-size: 32px;
+  }
+
+  .promo-text {
+    font-size: 12px;
+  }
+}
