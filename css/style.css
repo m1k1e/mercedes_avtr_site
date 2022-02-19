@@ -118,13 +118,13 @@ body {
 }
 
 .header__menu {
-}
-
-.menu-header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu-header {
 }
 .menu-header__burger {
 }
@@ -216,4 +216,37 @@ body {
   .promo-text {
     font-size: 12px;
   }
+}
+
+/*-----------------------FOOTER------------------------------------*/
+
+.footer {
+}
+.footer__container {
+}
+.footer__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+}
+.menu-footer {
+}
+.menu-footer__copyright {
+}
+
+.menu-footer__link:hover {
+  text-decoration: underline;
+}
+
+.menu-footer__logo {
+}
+.menu-footer__social {
+}
+.social-link__items {
+}
+.social-link__item {
+}
+.social-link__link {
 }
