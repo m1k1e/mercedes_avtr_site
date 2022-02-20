@@ -357,6 +357,37 @@ body {
   }
 }
 
+/*----------------------VIDEO----------------------------------------------*/
+.video {
+  margin-bottom: 150px;
+  padding: 10px;
+}
+.video__block {
+}
+.block > *:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 770px) {
+  .video {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 550px) {
+  .video {
+    margin-bottom: 30px;
+  }
+
+  .block > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .block__button {
+    font-size: 16px;
+  }
+}
+
 /*-----------------------FOOTER------------------------------------*/
 
 .footer__menu {
