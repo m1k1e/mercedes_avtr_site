@@ -215,8 +215,6 @@ body {
   flex: 1 1 auto;
 }
 
-.concept__content {
-}
 .content {
   margin: 140px 0px 140px auto;
   max-width: 900px;
@@ -230,6 +228,7 @@ body {
 .content__title {
   font-family: "Corporate-A";
   color: #f402a2;
+  text-transform: uppercase;
 }
 .content__text {
   font-size: 24px;
@@ -249,6 +248,112 @@ body {
 @media (max-width: 500px) {
   .content {
     margin: 35px 0px 35px auto;
+  }
+}
+
+/*-----------------------PREMIER-----------------------------------*/
+.premier {
+  padding: 10px;
+}
+.premier__columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+.premier-item {
+}
+.premier-item__leftcol {
+}
+.left-column {
+  flex: 0 1 48%;
+}
+
+.left-column > *:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.left-column__title {
+  font-family: "Corporate-A";
+  color: #f402a2;
+  text-transform: uppercase;
+}
+.left-column__text {
+}
+.left-column__picture {
+}
+
+.left-column__button {
+  display: flex;
+  border: 1px solid #f402a2;
+  font-family: "Corporate-A";
+  color: #f402a2;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+}
+
+.left-column__button:hover {
+  border: 1px solid #53a1cb;
+  color: #53a1cb;
+}
+
+.premier-item__rightcol {
+}
+.right-column {
+  flex: 0 1 48%;
+}
+
+.right-column > *:not(:last-child) {
+  margin-bottom: 25px;
+}
+.right-column__picture {
+}
+.right-column__text {
+}
+
+@media (max-width: 770px) {
+  .premier__columns {
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+
+  .left-column {
+    flex: 0 1 80%;
+    margin-bottom: 50px;
+  }
+
+  .right-column {
+    flex: 0 1 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  .premier__columns {
+    margin-bottom: 30px;
+  }
+
+  .left-column {
+    flex: 0 1 80%;
+    margin-bottom: 20px;
+  }
+
+  .left-column__title {
+    font-size: 16px;
+  }
+
+  .left-column__text {
+    font-size: 14px;
+  }
+
+  .left-column__button {
+    font-size: 16px;
+  }
+
+  .right-column__text {
+    font-size: 14px;
   }
 }
 
