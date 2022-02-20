@@ -283,7 +283,7 @@ body {
 .left-column__picture {
 }
 
-.left-column__button {
+.button {
   display: flex;
   border: 1px solid #f402a2;
   font-family: "Corporate-A";
@@ -295,7 +295,7 @@ body {
   text-transform: uppercase;
 }
 
-.left-column__button:hover {
+.button:hover {
   border: 1px solid #53a1cb;
   color: #53a1cb;
 }
